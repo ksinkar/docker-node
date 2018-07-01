@@ -54,6 +54,7 @@ function test_image() {
 
   info "Testing ${full_tag}"
   export full_version=${full_version}
+  export variant=${variant}
   export full_tag=${full_tag}
   bats test-image.bats
 }
